@@ -25,6 +25,6 @@ spec:
       type: ClusterIP
       port: 5432
     initdbScripts:
-      my_init_script.sh: |
-        #!/bin/sh
-        echo "Do something."  
+      create-zencar-dev.sql: |
+        CREATE ROLE IF NOT EXISTS zencar_dev WITH LOGIN PASSWORD 'helloworld';
+        CREATE DATABASE IF NOT EXISTS zencar_dev OWNER zencar_dev;
