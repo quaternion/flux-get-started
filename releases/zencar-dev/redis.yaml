@@ -15,12 +15,12 @@ spec:
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: redis
-    version: 10.3.1
+    version: 10.7.13
   values:
     usePassword: false
     image:
       repository: bitnami/redis
-      tag: 5.0.7
+      tag: 6.0.6
     service:
       type: ClusterIP
       port: 6379
