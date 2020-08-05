@@ -10,8 +10,8 @@ metadata:
 spec:
   releaseName: redis
   chart:
-    repository: https://charts.bitnami.com
-    name: bitnami/redis
+    repository: https://charts.bitnami.com/bitnami
+    name: redis
     version: 10.7.13
   values:
     usePassword: false

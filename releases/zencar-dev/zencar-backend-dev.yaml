@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: zencar-backend-dev
   chart:
-    git: ssh://git@github.com/fluxcd/flux-get-started
+    git: ssh://git@github.com/quaternion/flux-get-started
     ref: master
     path: charts/zencar-backend
   values:
