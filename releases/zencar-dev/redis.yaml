@@ -16,11 +16,8 @@ spec:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: redis
     version: 10.3.1
-  valueFileSecrets:
-    # the redis-auth secret contains the password value
-    - name: redis-auth
   values:
-    usePassword: true
+    usePassword: false
     image:
       repository: bitnami/redis
       tag: 5.0.7
