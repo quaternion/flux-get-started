@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: redis
   chart:
-    repository: https://kubernetes-charts.storage.googleapis.com/
+    repository: https://charts.bitnami.com/bitnami
     name: redis
     version: 10.7.13
   values:
