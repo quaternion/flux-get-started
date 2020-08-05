@@ -1,0 +1,26 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: postgresql
+  namespace: postgresql
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.chart-image: semver:~12.3
+    fluxcd.io/locked: "true"
+    fluxcd.io/locked_msg: "Halt updates for now"
+    fluxcd.io/locked_user: "Andrey Nikolaev <an@zen.car>"
+spec:
+  releaseName: postgresql
+  chart:
+    repository: https://charts.bitnami.com/bitnami
+    name: postgresql
+    version: 9.1.2
+  values:
+    usePassword: true
+    image:
+      repository: bitnami/postgresql
+      tag: 12.3.0
+    service:
+      type: ClusterIP
+      port: 5432
