@@ -6,10 +6,7 @@ metadata:
   namespace: zencar-dev
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: semver:~5.0
-    fluxcd.io/locked: "true"
-    fluxcd.io/locked_msg: "Halt updates for now"
-    fluxcd.io/locked_user: "Stefan Prodan <stefan@weave.works>"
+    fluxcd.io/tag.chart-image: semver:~6.0    
 spec:
   releaseName: redis
   chart:
