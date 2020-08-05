@@ -24,3 +24,7 @@ spec:
     service:
       type: ClusterIP
       port: 5432
+    initdbScripts:
+      my_init_script.sh: |
+        #!/bin/sh
+        echo "Do something."  
