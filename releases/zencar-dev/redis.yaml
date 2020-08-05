@@ -2,13 +2,13 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: redis
+  name: zencar-redis-dev
   namespace: zencar-dev
   annotations:
     fluxcd.io/automated: "true"
     fluxcd.io/tag.chart-image: semver:~6.0
 spec:
-  releaseName: redis
+  releaseName: zencar-redis-dev
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: redis
