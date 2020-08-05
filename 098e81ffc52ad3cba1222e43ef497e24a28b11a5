@@ -1,0 +1,1 @@
+{"jobID":"a118e3d8-eeb4-a43a-1556-4683b1abd6c4","spec":{"type":"policy","cause":{"Message":"","User":"Andrew Nikolaev \u003cqpkskynet@gmail.com\u003e"},"spec":{"demo:deployment/podinfo":{"add":{"tag.podinfod":"glob:3.2.*"},"remove":{}}}},"result":null}
