@@ -15,7 +15,7 @@ spec:
     path: charts/zencar-backend
   values:
     imagePullSecrets:
-      - zen-car-github-packages  
+      - name: zen-car-github-packages  
     # image:
     #   repository: bitnami/ghost
     #   tag: 3.1.1-debian-9-r0
