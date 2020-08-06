@@ -1,3 +1,20 @@
+репа https://github.com/quaternion/flux-get-started
+
+нужен локальный microk8s из snap
+`sudo snap install microk8s --classic --channel=1.18/stable`
+
+с плагинами `microk8s enable dns helm3 rbac storage`
+ 
+нужен helm 3 `sudo snap install helm --classic`
+
+нужен kubectl `sudo snap install kubectl --classic`
+
+нужен fluxctl `sudo snap install fluxctl`
+
+установка в кластер flux по этой доке: https://docs.fluxcd.io/en/latest/tutorials/get-started-helm/#install-flux
+
+
+
 # flux-get-started
 
 [![CircleCI](https://circleci.com/gh/fluxcd/flux-get-started.svg?style=svg)](https://circleci.com/gh/fluxcd/flux-get-started)
