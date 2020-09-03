@@ -6,7 +6,7 @@ metadata:
   namespace: zencar-dev
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: semver:~6.0    
+    fluxcd.io/tag.chart-image: semver:~6.0
 spec:
   releaseName: redis
   chart:
@@ -17,7 +17,7 @@ spec:
     usePassword: false
     image:
       repository: bitnami/redis
-      tag: 6.0.6
+      tag: 6.0.7
     service:
       type: ClusterIP
       port: 6379
